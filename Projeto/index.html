@@ -1,69 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Eliminação de Gauss</title>
+    </head>
 
-<head>
-    <meta charset="uft-8">
-    <meta name="viewport" content="width-640, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Eliminação de Gauss</title>
-</head>
+    <body>
+        <header class="top">
+            <h1 class="title">CÁLCULO NUMÉRICO</h1>
+            <h2 class="title">SISTEMA LINEARES</h2>
+        </header>
 
-<body>
-    <header class="top">
-        <h1 class="title">CÁLCULO NUMÉRICO</h1>
-        <h2 class="title">SISTEMA LINEARES</h2>
-    </header>
+        <div class="divtotal">
+            <div class="grid-container">
+                <div class="item">
+                    <label><input class="input" type="number" id="l1"></label>
+                </div>
+                <div class="item">
+                    <label><input class="input" type="number" id="L2"></label>
+                </div>
+                <div class="item">
+                    <label><input class="input" type="number" id="L3"></label>
+                </div>
+                <br>
+                <div class="item">
+                    <label><input class="input" type="number" id="L4"></label>
+                </div>
+                <div class="item">
+                    <label><input class="input" type="number" id="L5"></label>
+                </div>
+                <div class="item">
+                    <label><input class="input" type="number" id="L6"></label>
+                </div>
+                <br>
+                <div class="item">
+                    <label><input class="input" type="number" id="L7"></label>
+                </div>
+                <div class="item">
+                    <label><input class="input" type="number" id="L8"></label>
+                </div>
+                <div class="item">
+                    <label><input class="input" type="number" id="L9"></label>
+                </div>
+            </div>
 
-    <div class="divtotal">
-        <div class="grid-container">
-            <div class="item">
-                <input class="input" type="number" id="camp01">
-            </div>
-            <div class="item">
-                <input class="input" type="number" id="camp02">
-            </div>
-            <div class="item">
-                <input class="input" type="number" id="camp03">
-            </div>
-            <br>
-            <div class="item">
-                <input class="input" type="number" id="camp04">
-            </div>
-            <div class="item">
-                <input class="input" type="number" id="camp05">
-            </div>
-            <div class="item">
-                <input class="input" type="number" id="camp06">
-            </div>
-            <br>
-            <div class="item">
-                <input class="input" type="number" id="camp07">
-            </div>
-            <div class="item">
-                <input class="input" type="number" id="camp08">
-            </div>
-            <div class="item">
-                <input class="input" type="number" id="camp09">
+            <div class="resu">
+                <div class="itemresu">
+                    <label><input type="number" class="inputresu"></label>
+                </div>
+                <div class="itemresu">
+                    <label><input type="number" class="inputresu"></label>
+                </div>
+                <div class="itemresu">
+                    <label><input type="number" class="inputresu"></label>
+                </div>
             </div>
         </div>
 
-        <div class="resu">
-            <div class="itemresu">
-                <input type="number" class="inputresu">
-            </div>
-            <div class="itemresu">
-                <input type="number" class="inputresu">
-            </div>
-            <div class="itemresu">
-                <input type="number" class="inputresu">
-            </div>
+        <div class="button">
+            <input id="button" type="submit" value="CALCULAR">
         </div>
-    </div>
-
-    <div class="button">
-        <button type="button">CALCULAR</button>
-    </div>
-
-<script src="script/script.js"></script>
-</body>
+        <div class="resuFIM">
+            RESULTADO <span id="span"></span>
+        </div>
+        <script type="text/javascript" src="script/script.js" defer></script>
+    </body>
 </html>
