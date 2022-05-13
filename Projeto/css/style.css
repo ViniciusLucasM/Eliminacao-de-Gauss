@@ -42,12 +42,30 @@ input.input {
     padding: 5px;
 }
 
-.input,
-.inputresu {
+.input{
     width: 40px;
     height: 30px;
 }
 .button{
-    margin-left: 20rem;
+    margin-left: 40rem;
     margin-top: 10px;
+}
+.grid, .itemPrin{
+    margin-top: 4rem;
+    text-align: center;
+}
+.Prinbutton{
+    margin-top: 10px;
+}
+a{
+    text-decoration: none;
+    font-family: arial;
+    background-color: #000;
+    color: white;
+    padding: 5px 23px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 3px;
 }

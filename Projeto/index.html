@@ -14,57 +14,33 @@
             <h2 class="title">SISTEMA LINEARES</h2>
         </header>
 
-        <div class="divtotal">
-            <div class="grid-container">
-                <div class="item">
-                    <label><input class="input" type="number" id="l1"></label>
-                </div>
-                <div class="item">
-                    <label><input class="input" type="number" id="l2"></label>
-                </div>
-                <div class="item">
-                    <label><input class="input" type="number" id="l3"></label>
-                </div>
-                <br>
-                <div class="item">
-                    <label><input class="input" type="number" id="l4"></label>
-                </div>
-                <div class="item">
-                    <label><input class="input" type="number" id="l5"></label>
-                </div>
-                <div class="item">
-                    <label><input class="input" type="number" id="l6"></label>
-                </div>
-                <br>
-                <div class="item">
-                    <label><input class="input" type="number" id="l7"></label>
-                </div>
-                <div class="item">
-                    <label><input class="input" type="number" id="l8"></label>
-                </div>
-                <div class="item">
-                    <label><input class="input" type="number" id="l9"></label>
-                </div>
+        
+        <div class="grid">
+            <div class="itemPrin">
+                <label><input type="number" id="valgrid"></label>
             </div>
-
-            <div class="resu">
-                <div class="itemresu">
-                    <label><input type="number" class="inputresu"></label>
-                </div>
-                <div class="itemresu">
-                    <label><input type="number" class="inputresu"></label>
-                </div>
-                <div class="itemresu">
-                    <label><input type="number" class="inputresu"></label>
-                </div>
+            <div class="buttonPrin">
+                <button class="buttonPrin">CONFIRMAR</button>
             </div>
         </div>
 
-        <div class="button">
-            <input id="button" type="submit" value="CALCULAR">
-        </div>
-        <div class="resuFIM">
-            RESULTADO <span id="span"></span>
+        <div class="Principal" style="display: none;">
+            <div class="divtotal">
+                <div class="grid-container">
+                    
+                </div>
+    
+                <div class="resu">
+                    
+                </div>
+            </div>
+    
+            <div class="button">
+                <input id="button" type="submit" value="CALCULAR">
+            </div>
+            <div class="resuFIM">
+                <span id="span"></span>
+            </div>
         </div>
         <script type="text/javascript" src="script/script.js" defer></script>
     </body>
