@@ -45,7 +45,53 @@ function grids(ordem){
 
 var valores = [];
 var valoresResu = [];
+var valores2 = [];
 
+function separar(array, ordem) {
+    var newValores = [[]];
+    var grupoSepa = 0;
+    for (var i = 0; i < array.length; i++) {
+      if (newValores[grupoSepa] === undefined) {
+        newValores[grupoSepa] = [];
+      }
+
+      newValores[grupoSepa].push(array[i]);
+
+      if ((i + 1) % ordem === 0) {
+        grupoSepa += 1;
+      }
+    }
+
+    newValores.forEach(function(element, index){
+        element.push(valoresResu[index]);
+    });
+
+    return newValores;
+}
+
+
+function conta(array, ordem){
+    var column1 = [];
+    var numbers = [];
+    for(i = 0; i < array.length; i++){
+        var numeros = array[i];
+        for(x = 0; x < numeros.length; x++){
+            if(numeros[x] == 0){
+                console.log("AAAAAAA");
+            }
+        }
+    }
+
+    for(i = 0; i < array.length; i++){
+        for(x = 0; x < array.length + 1; x++){
+            column1[x] = array[i][x - array.length];
+            if(column1[x] != undefined){
+                numbers[x] = column1[x];
+            }
+        }
+        console.log(numbers);
+    }
+}
 
 button.addEventListener("click", function(e) {
     e.preventDefault();
@@ -64,6 +110,10 @@ button.addEventListener("click", function(e) {
         }
     });
 
+    
+
+    valores2 = separar(valores, ordem);
+    conta(valores2, ordem);
     resultado.innerHTML = ``;
 })
 
