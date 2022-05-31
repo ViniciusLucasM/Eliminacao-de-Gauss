@@ -65,14 +65,18 @@ function separar(array, ordem) {
     newValores.forEach(function(element, index){
         element.push(valoresResu[index]);
     });
-
     return newValores;
 }
 
 
 function conta(array, ordem){
-    var column1 = [];
+    var column1 = []; 
     var numbers = [];
+    var linha1 = [];
+    var linha2 = [];
+    var linha3 = [];
+    var a = [];
+
     for(i = 0; i < array.length; i++){
         var numeros = array[i];
         for(x = 0; x < numeros.length; x++){
@@ -86,10 +90,39 @@ function conta(array, ordem){
         for(x = 0; x < array.length + 1; x++){
             column1[x] = array[i][x - array.length];
             if(column1[x] != undefined){
-                numbers[x] = column1[x];
+                numbers.push(column1[x]);
             }
         }
-        console.log(numbers);
+    }
+
+    for(i = 0; i < numbers.length; i++){
+        if(k == 0){
+           var k = numbers[i + 1] / numbers[i];
+        } 
+        if(w == 0){
+           var w = numbers[i + 2] / numbers[i];
+        }
+    }
+
+    for(i = 0; i < array.length; i++){
+        if(i == 0){
+            for(x = 0; x < array[i].length; x++){
+                linha1.push(array[i][x]);
+            }
+        } else if(i == 1){
+            for(x = 0; x < array[i].length; x++){
+                linha2.push(array[i][x]);
+            }
+        } else {
+            for(x = 0; x < array[i].length; x++){
+                linha3.push(array[i][x]);
+            }
+        }
+    }
+
+    for(i = 0; i < linha2.length; i++){
+        i = 1;
+        console.log(linha2[i]);
     }
 }
 
